@@ -110,7 +110,7 @@
             this.rb_HitSet = new System.Windows.Forms.RadioButton();
             this.rb_SpeedSet = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgv_Inventory = new System.Windows.Forms.DataGridView();
+            this.dgv_Inventory = new Mobius.Utility.SortedDataGridView();
             this.c_set = new System.Windows.Forms.DataGridViewImageColumn();
             this.c_Type = new System.Windows.Forms.DataGridViewImageColumn();
             this.c_Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -5105,8 +5105,8 @@
             // 
             // tb4_SpeedTuner_ResultMin
             // 
-            this.tb4_SpeedTuner_ResultMin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb4_SpeedTuner_ResultMin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb4_SpeedTuner_ResultMin.Location = new System.Drawing.Point(145, 28);
             this.tb4_SpeedTuner_ResultMin.Name = "tb4_SpeedTuner_ResultMin";
@@ -5117,8 +5117,8 @@
             // 
             // tb4_SpeedTuner_Result
             // 
-            this.tb4_SpeedTuner_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb4_SpeedTuner_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb4_SpeedTuner_Result.Location = new System.Drawing.Point(74, 28);
             this.tb4_SpeedTuner_Result.Name = "tb4_SpeedTuner_Result";
@@ -5129,8 +5129,8 @@
             // 
             // tb4_SpeedTuner_ResultMax
             // 
-            this.tb4_SpeedTuner_ResultMax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb4_SpeedTuner_ResultMax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb4_SpeedTuner_ResultMax.Location = new System.Drawing.Point(3, 28);
             this.tb4_SpeedTuner_ResultMax.Name = "tb4_SpeedTuner_ResultMax";
@@ -5141,8 +5141,8 @@
             // 
             // label95
             // 
-            this.label95.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label95.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label95.AutoSize = true;
             this.label95.Location = new System.Drawing.Point(145, 0);
@@ -5154,8 +5154,8 @@
             // 
             // label96
             // 
-            this.label96.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label96.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label96.AutoSize = true;
             this.label96.Location = new System.Drawing.Point(74, 0);
@@ -5167,8 +5167,8 @@
             // 
             // label97
             // 
-            this.label97.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label97.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label97.AutoSize = true;
             this.label97.Location = new System.Drawing.Point(3, 0);
@@ -5210,8 +5210,8 @@
             // 
             // tb4_SpeedTunerGear
             // 
-            this.tb4_SpeedTunerGear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb4_SpeedTunerGear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb4_SpeedTunerGear.Location = new System.Drawing.Point(3, 28);
             this.tb4_SpeedTunerGear.Name = "tb4_SpeedTunerGear";
@@ -5222,8 +5222,8 @@
             // 
             // label99
             // 
-            this.label99.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label99.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label99.AutoSize = true;
             this.label99.Location = new System.Drawing.Point(103, 0);
@@ -5235,8 +5235,8 @@
             // 
             // label100
             // 
-            this.label100.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label100.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label100.AutoSize = true;
             this.label100.Location = new System.Drawing.Point(3, 0);
@@ -5298,8 +5298,8 @@
             // 
             // tb3_SpeedTuner_ResultMin
             // 
-            this.tb3_SpeedTuner_ResultMin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb3_SpeedTuner_ResultMin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb3_SpeedTuner_ResultMin.Location = new System.Drawing.Point(145, 28);
             this.tb3_SpeedTuner_ResultMin.Name = "tb3_SpeedTuner_ResultMin";
@@ -5310,8 +5310,8 @@
             // 
             // tb3_SpeedTuner_Result
             // 
-            this.tb3_SpeedTuner_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb3_SpeedTuner_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb3_SpeedTuner_Result.Location = new System.Drawing.Point(74, 28);
             this.tb3_SpeedTuner_Result.Name = "tb3_SpeedTuner_Result";
@@ -5322,8 +5322,8 @@
             // 
             // tb3_SpeedTuner_ResultMax
             // 
-            this.tb3_SpeedTuner_ResultMax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb3_SpeedTuner_ResultMax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb3_SpeedTuner_ResultMax.Location = new System.Drawing.Point(3, 28);
             this.tb3_SpeedTuner_ResultMax.Name = "tb3_SpeedTuner_ResultMax";
@@ -5334,8 +5334,8 @@
             // 
             // label88
             // 
-            this.label88.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label88.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label88.AutoSize = true;
             this.label88.Location = new System.Drawing.Point(145, 0);
@@ -5347,8 +5347,8 @@
             // 
             // label89
             // 
-            this.label89.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label89.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label89.AutoSize = true;
             this.label89.Location = new System.Drawing.Point(74, 0);
@@ -5360,8 +5360,8 @@
             // 
             // label90
             // 
-            this.label90.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label90.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label90.AutoSize = true;
             this.label90.Location = new System.Drawing.Point(3, 0);
@@ -5403,8 +5403,8 @@
             // 
             // tb3_SpeedTunerGear
             // 
-            this.tb3_SpeedTunerGear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb3_SpeedTunerGear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb3_SpeedTunerGear.Location = new System.Drawing.Point(3, 28);
             this.tb3_SpeedTunerGear.Name = "tb3_SpeedTunerGear";
@@ -5415,8 +5415,8 @@
             // 
             // label91
             // 
-            this.label91.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label91.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label91.AutoSize = true;
             this.label91.Location = new System.Drawing.Point(103, 0);
@@ -5428,8 +5428,8 @@
             // 
             // label92
             // 
-            this.label92.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label92.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label92.AutoSize = true;
             this.label92.Location = new System.Drawing.Point(3, 0);
@@ -5491,8 +5491,8 @@
             // 
             // tb2_SpeedTuner_ResultMin
             // 
-            this.tb2_SpeedTuner_ResultMin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb2_SpeedTuner_ResultMin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb2_SpeedTuner_ResultMin.Location = new System.Drawing.Point(145, 28);
             this.tb2_SpeedTuner_ResultMin.Name = "tb2_SpeedTuner_ResultMin";
@@ -5503,8 +5503,8 @@
             // 
             // tb2_SpeedTuner_Result
             // 
-            this.tb2_SpeedTuner_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb2_SpeedTuner_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb2_SpeedTuner_Result.Location = new System.Drawing.Point(74, 28);
             this.tb2_SpeedTuner_Result.Name = "tb2_SpeedTuner_Result";
@@ -5515,8 +5515,8 @@
             // 
             // tb2_SpeedTuner_ResultMax
             // 
-            this.tb2_SpeedTuner_ResultMax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb2_SpeedTuner_ResultMax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb2_SpeedTuner_ResultMax.BackColor = System.Drawing.SystemColors.Control;
             this.tb2_SpeedTuner_ResultMax.Location = new System.Drawing.Point(3, 28);
@@ -5528,8 +5528,8 @@
             // 
             // label79
             // 
-            this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label79.AutoSize = true;
             this.label79.Location = new System.Drawing.Point(145, 0);
@@ -5541,8 +5541,8 @@
             // 
             // label81
             // 
-            this.label81.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label81.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label81.AutoSize = true;
             this.label81.Location = new System.Drawing.Point(74, 0);
@@ -5554,8 +5554,8 @@
             // 
             // label83
             // 
-            this.label83.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label83.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label83.AutoSize = true;
             this.label83.Location = new System.Drawing.Point(3, 0);
@@ -5597,8 +5597,8 @@
             // 
             // tb2_SpeedTunerGear
             // 
-            this.tb2_SpeedTunerGear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb2_SpeedTunerGear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb2_SpeedTunerGear.Location = new System.Drawing.Point(3, 28);
             this.tb2_SpeedTunerGear.Name = "tb2_SpeedTunerGear";
@@ -5609,8 +5609,8 @@
             // 
             // label84
             // 
-            this.label84.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label84.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label84.AutoSize = true;
             this.label84.Location = new System.Drawing.Point(103, 0);
@@ -5622,8 +5622,8 @@
             // 
             // label86
             // 
-            this.label86.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label86.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label86.AutoSize = true;
             this.label86.Location = new System.Drawing.Point(3, 0);
@@ -5685,8 +5685,8 @@
             // 
             // tb1_SpeedTuner_ResultMin
             // 
-            this.tb1_SpeedTuner_ResultMin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb1_SpeedTuner_ResultMin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb1_SpeedTuner_ResultMin.Location = new System.Drawing.Point(145, 28);
             this.tb1_SpeedTuner_ResultMin.Name = "tb1_SpeedTuner_ResultMin";
@@ -5697,8 +5697,8 @@
             // 
             // tb1_SpeedTuner_Result
             // 
-            this.tb1_SpeedTuner_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb1_SpeedTuner_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb1_SpeedTuner_Result.Location = new System.Drawing.Point(74, 28);
             this.tb1_SpeedTuner_Result.Name = "tb1_SpeedTuner_Result";
@@ -5709,8 +5709,8 @@
             // 
             // tb1_SpeedTuner_ResultMax
             // 
-            this.tb1_SpeedTuner_ResultMax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb1_SpeedTuner_ResultMax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb1_SpeedTuner_ResultMax.Location = new System.Drawing.Point(3, 28);
             this.tb1_SpeedTuner_ResultMax.Name = "tb1_SpeedTuner_ResultMax";
@@ -5721,8 +5721,8 @@
             // 
             // label72
             // 
-            this.label72.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label72.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label72.AutoSize = true;
             this.label72.Location = new System.Drawing.Point(145, 0);
@@ -5734,8 +5734,8 @@
             // 
             // label58
             // 
-            this.label58.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label58.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label58.AutoSize = true;
             this.label58.Location = new System.Drawing.Point(74, 0);
@@ -5747,8 +5747,8 @@
             // 
             // label57
             // 
-            this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label57.AutoSize = true;
             this.label57.Location = new System.Drawing.Point(3, 0);
@@ -5778,8 +5778,8 @@
             // 
             // tb1_SpeedTunerGear
             // 
-            this.tb1_SpeedTunerGear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb1_SpeedTunerGear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb1_SpeedTunerGear.Location = new System.Drawing.Point(3, 28);
             this.tb1_SpeedTunerGear.Name = "tb1_SpeedTunerGear";
@@ -5790,8 +5790,8 @@
             // 
             // label56
             // 
-            this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label56.AutoSize = true;
             this.label56.Location = new System.Drawing.Point(103, 0);
@@ -5803,8 +5803,8 @@
             // 
             // label54
             // 
-            this.label54.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label54.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label54.AutoSize = true;
             this.label54.Location = new System.Drawing.Point(3, 0);
@@ -5988,7 +5988,7 @@
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.TabPage tb_Heroes;
         private System.Windows.Forms.ImageList Sets;
-        private System.Windows.Forms.DataGridView dgv_Inventory;
+        private Mobius.Utility.SortedDataGridView dgv_Inventory;
         private System.Windows.Forms.Button b_NewItem;
         private System.Windows.Forms.Button b_EditItem;
         private System.Windows.Forms.Panel p_Set;

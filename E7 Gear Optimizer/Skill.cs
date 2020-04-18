@@ -92,7 +92,8 @@ namespace E7_Gear_Optimizer
                         //ignore
                         break;
                     default:
-                        throw new UnsupportedDamageModifierException(name);
+                        //throw new UnsupportedDamageModifierException(name);
+                        break;
                 }
             }
             jEnhancement = jSkill["enhancement"].ToArray();
@@ -179,7 +180,7 @@ namespace E7_Gear_Optimizer
                 }
             }
             else
-            { 
+            {
                 dmg = (atk * stats.ATK + hp * stats.HP + def * stats.DEF) * (1 + spd * stats.SPD) * pow * otherMultipliers;
                 if (crit)
                 {

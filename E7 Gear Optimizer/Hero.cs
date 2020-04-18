@@ -71,7 +71,7 @@ namespace E7_Gear_Optimizer
                 {
                     Skills[iSkill] = new Skill();
 #if DEBUG
-                    MessageBox.Show(ex.Message + Environment.NewLine + "Hero: " + name, "Unsupported damage modifier", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //MessageBox.Show(ex.Message + Environment.NewLine + "Hero: " + name, "Unsupported damage modifier", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 #endif
                 }
             };
@@ -84,7 +84,7 @@ namespace E7_Gear_Optimizer
         public int Lvl
         {
             get => lvl;
-            set => lvl = value > 49 && value < 61 ? value  : lvl;
+            set => lvl = value > 49 && value < 61 ? value : lvl;
         }
         public int Awakening
         {
@@ -154,7 +154,7 @@ namespace E7_Gear_Optimizer
         }
 
         //Parse JSON data from EpicSevenDB to get the base stats of the hero at lvl 50 or 60
-        private Dictionary<Stats,float> getBaseStats(string json)
+        private Dictionary<Stats, float> getBaseStats(string json)
         {
             if (json == null)
             {
@@ -162,7 +162,7 @@ namespace E7_Gear_Optimizer
             }
             JToken statsJson = JObject.Parse(json)["results"][0]["stats"];
             statsJson = lvl == 50 ? statsJson["lv50FiveStarNoAwaken"] : statsJson["lv60SixStarNoAwaken"];
-            Dictionary<Stats,float> baseStats = new Dictionary<Stats, float>();
+            Dictionary<Stats, float> baseStats = new Dictionary<Stats, float>();
             var stats = statsJson.Children().GetEnumerator();
             stats.MoveNext();
             stats.MoveNext();
@@ -187,11 +187,11 @@ namespace E7_Gear_Optimizer
         }
 
         //Parse JSON data from EpicSevenDB to get the stats of an awakened hero
-        private Dictionary<Stats,float> getAwakeningStats(string json)
+        private Dictionary<Stats, float> getAwakeningStats(string json)
         {
             JToken statsJson = JObject.Parse(json)["results"][0]["awakening"];
             Dictionary<Stats, float> awakeningStats = new Dictionary<Stats, float>();
-            for (int i = 0; i < Awakening ;i++)
+            for (int i = 0; i < Awakening; i++)
             {
                 JToken stats = statsJson[i]["statsIncrease"];
                 for (int j = 0; j < stats.Count(); j++)
@@ -202,7 +202,8 @@ namespace E7_Gear_Optimizer
                     if ((name == "ATK" || name == "HP" || name == "DEF") && (float)stat.Value < 1)
                     {
                         s = new Stat((Stats)Enum.Parse(typeof(Stats), stat.Name.ToUpper() + "Percent"), (float)stat.Value);
-                    } else
+                    }
+                    else
                     {
                         s = new Stat((Stats)Enum.Parse(typeof(Stats), stat.Name.ToUpper().Replace("CHC", "Crit").Replace("CHD", "CritDmg").Replace("EFR", "RES")), (float)stat.Value);
                     }
@@ -238,7 +239,7 @@ namespace E7_Gear_Optimizer
         private HeroClass getClass(string json)
         {
             JToken info = JObject.Parse(json)["results"][0];
-            return (HeroClass)Enum.Parse(typeof(HeroClass), System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase((string)info["classType"]).Replace("Soul-Weaver","SoulWeaver"));
+            return (HeroClass)Enum.Parse(typeof(HeroClass), System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase((string)info["classType"]).Replace("Soul-Weaver", "SoulWeaver"));
         }
 
         //Calculates the current stats of a hero

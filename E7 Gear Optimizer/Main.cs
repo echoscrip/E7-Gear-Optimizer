@@ -27,7 +27,7 @@ namespace E7_Gear_Optimizer
         List<int> filteredCombinations = new List<int>();
         int optimizePage = 1;
         int sortColumn = -1;
-        Dictionary<Stats, (float,float)> forceStats = new Dictionary<Stats, (float,float)>();
+        Dictionary<Stats, (float, float)> forceStats = new Dictionary<Stats, (float, float)>();
         Dictionary<Stats, (float, float)> filterStats = new Dictionary<Stats, (float, float)>();
         CancellationTokenSource tokenSource;
         string[] args = Environment.GetCommandLineArgs();
@@ -101,13 +101,13 @@ namespace E7_Gear_Optimizer
                    | SecurityProtocolType.Tls11
                    | SecurityProtocolType.Tls12
                    | SecurityProtocolType.Ssl3;
-            Icon = Icon.FromHandle(Util.ResizeImage(Properties.Resources.bookmark, 19,18).GetHicon());
+            Icon = Icon.FromHandle(Util.ResizeImage(Properties.Resources.bookmark, 19, 18).GetHicon());
             if (Properties.Settings.Default.UseCache)
             {
                 Directory.CreateDirectory(Properties.Settings.Default.CacheDirectory);
             }
             //Read list of heroes from epicsevendb.com
-            
+
             string json = null;
             string cacheFileName = Path.Combine(Properties.Settings.Default.CacheDirectory, "db.hero.json");
             if (useCache && File.Exists(cacheFileName) && System.DateTime.Now.Subtract(File.GetLastWriteTime(cacheFileName)).TotalDays <= Properties.Settings.Default.CacheTimeToLive)
@@ -184,10 +184,10 @@ namespace E7_Gear_Optimizer
             cb_Eq.Items.Add("");
             dgv_OptimizeResults.RowCount = 0;
             dgv_Inventory.Columns[0].SortMode = DataGridViewColumnSortMode.Programmatic;
-            richTextBox1.SelectionFont = new Font(FontFamily.GenericSansSerif, 15, FontStyle.Bold); 
+            richTextBox1.SelectionFont = new Font(FontFamily.GenericSansSerif, 15, FontStyle.Bold);
             richTextBox1.SelectedText = "How to use: \n\n";
             richTextBox1.SelectionBullet = true;
-            richTextBox1.SelectionFont = new Font(FontFamily.GenericSansSerif, 10 ,FontStyle.Bold);
+            richTextBox1.SelectionFont = new Font(FontFamily.GenericSansSerif, 10, FontStyle.Bold);
             richTextBox1.SelectedText = "Start a new collection by entering your Heroes and Items on the Heroes and Inenventory Tabs or import an existing one.\n";
             richTextBox1.SelectionBullet = false;
             richTextBox1.SelectionIndent = 8;
@@ -396,7 +396,7 @@ namespace E7_Gear_Optimizer
 
         //Update the controls in the selected tab
         private void tc_Main_SelectedIndexChanged(object sender, EventArgs e)
-        { 
+        {
             if (((TabControl)(sender)).SelectedIndex == 1)
             {
                 updateItemList();
@@ -449,6 +449,7 @@ namespace E7_Gear_Optimizer
             var filteredList = (filter == ItemType.All) ? data.Items : data.Items.Where(x => x.Type == filter);
             Set? setFilter = tc_InventorySets.SelectedIndex == 0 ? null : (Set?)(tc_InventorySets.SelectedIndex - 1);
             filteredList = setFilter == null ? filteredList : filteredList.Where(x => x.Set == setFilter);
+            filteredList = filteredList.OrderByDescending(s => s.ILvl).ThenBy(s => s.Grade);
             foreach (Item item in filteredList)
             {
                 dgv_Inventory.Rows.Add(getInventoryRowValues(item));
@@ -549,7 +550,7 @@ namespace E7_Gear_Optimizer
                 int count = 0;
                 if (activeSets.Contains(Set.Unity))
                 {
-                    foreach(Set set in activeSets)
+                    foreach (Set set in activeSets)
                     {
                         count += set == Set.Unity ? 1 : 0;
                     }
@@ -625,13 +626,13 @@ namespace E7_Gear_Optimizer
             nud_ILvl.Value = (int)row.Cells["c_ILvl"].Value;
             nud_Enhance.Value = (int)float.Parse(((string)row.Cells["c_Enhance"].Value).Substring(1));
             lb_Main.SelectedIndex = lb_Main.FindStringExact((string)row.Cells["c_Main"].Value);
-            nud_Main.Value = (int)float.Parse(((string)row.Cells["c_Value"].Value).Replace("%",""));
+            nud_Main.Value = (int)float.Parse(((string)row.Cells["c_Value"].Value).Replace("%", ""));
             int subStat = 0;
             for (int i = 7; i < 18; i++)
             {
                 if ((string)row.Cells[i].Value != "")
                 {
-                    ListBox lb = (ListBox)tb_Inventory.Controls.Find("lb_Sub" + (subStat + 1) , false)[0];
+                    ListBox lb = (ListBox)tb_Inventory.Controls.Find("lb_Sub" + (subStat + 1), false)[0];
                     lb.SelectedIndex = lb.FindStringExact(dgv_Inventory.Columns[i].HeaderText);
                     NumericUpDown nud = ((NumericUpDown)tb_Inventory.Controls.Find("nud_Sub" + (subStat + 1), false)[0]);
                     nud.Value = 1;
@@ -639,9 +640,9 @@ namespace E7_Gear_Optimizer
                     subStat++;
                 }
             }
-            for (;subStat < 4; subStat++)
+            for (; subStat < 4; subStat++)
             {
-                ((ListBox)tb_Inventory.Controls.Find("lb_Sub" + (subStat+1), false)[0]).SelectedIndex = 11;
+                ((ListBox)tb_Inventory.Controls.Find("lb_Sub" + (subStat + 1), false)[0]).SelectedIndex = 11;
                 ((NumericUpDown)tb_Inventory.Controls.Find("nud_Sub" + (subStat + 1), false)[0]).Text = "";
             }
             if (row.Cells["c_Locked"].Value.ToString() == bool.TrueString)
@@ -738,7 +739,7 @@ namespace E7_Gear_Optimizer
         {
             if (((RadioButton)sender).Checked)
             {
-                for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length-5; i++)
+                for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length - 5; i++)
                 {
                     lb_Main.Items[i] = (Stats)i == Stats.DEF ? Stats.DEF.ToString() : "";
                 }
@@ -746,7 +747,7 @@ namespace E7_Gear_Optimizer
                 for (int sub = 1; sub < 5; sub++)
                 {
                     ListBox current = (ListBox)tb_Inventory.Controls.Find("lb_Sub" + sub, false)[0];
-                    for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length-5; i++)
+                    for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length - 5; i++)
                     {
                         switch ((Stats)i)
                         {
@@ -773,7 +774,7 @@ namespace E7_Gear_Optimizer
         {
             if (((RadioButton)sender).Checked)
             {
-                for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length-5; i++)
+                for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length - 5; i++)
                 {
                     switch ((Stats)i)
                     {
@@ -787,14 +788,14 @@ namespace E7_Gear_Optimizer
                             lb_Main.Items[i] = "";
                             break;
                         default:
-                            lb_Main.Items[i] = ((Stats)i).ToString().Replace("Percent","%");
+                            lb_Main.Items[i] = ((Stats)i).ToString().Replace("Percent", "%");
                             break;
                     }
                 }
                 for (int sub = 1; sub < 5; sub++)
                 {
                     ListBox current = (ListBox)tb_Inventory.Controls.Find("lb_Sub" + sub, false)[0];
-                    for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length-5; i++)
+                    for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length - 5; i++)
                     {
                         current.Items[i] = ((Stats)i).ToString().Replace("Percent", "%");
                     }
@@ -807,7 +808,7 @@ namespace E7_Gear_Optimizer
         {
             if (((RadioButton)sender).Checked)
             {
-                for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length-5; i++)
+                for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length - 5; i++)
                 {
                     switch ((Stats)i)
                     {
@@ -828,7 +829,7 @@ namespace E7_Gear_Optimizer
                 for (int sub = 1; sub < 5; sub++)
                 {
                     ListBox current = (ListBox)tb_Inventory.Controls.Find("lb_Sub" + sub, false)[0];
-                    for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length-5; i++)
+                    for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length - 5; i++)
                     {
                         current.Items[i] = ((Stats)i).ToString().Replace("Percent", "%");
                     }
@@ -841,7 +842,7 @@ namespace E7_Gear_Optimizer
         {
             if (((RadioButton)sender).Checked)
             {
-                for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length-5; i++)
+                for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length - 5; i++)
                 {
                     switch ((Stats)i)
                     {
@@ -865,7 +866,7 @@ namespace E7_Gear_Optimizer
                 for (int sub = 1; sub < 5; sub++)
                 {
                     ListBox current = (ListBox)tb_Inventory.Controls.Find("lb_Sub" + sub, false)[0];
-                    for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length-5; i++)
+                    for (int i = 0; i < Enum.GetNames(typeof(Stats)).Length - 5; i++)
                     {
                         current.Items[i] = ((Stats)i).ToString().Replace("Percent", "%");
                     }
@@ -882,7 +883,7 @@ namespace E7_Gear_Optimizer
         //Create a new item with the selected stats equipped on the selected hero
         private void B_NewItemEquipped_Click(object sender, EventArgs e)
         {
-            
+
             Hero hero = null;
             if (cb_Eq.Text != "")
             {
@@ -1294,7 +1295,7 @@ namespace E7_Gear_Optimizer
         }
 
         //Generate JSON String with the current items and heroes
-        
+
 
         //Calculate and display the current stats of the selected hero
         private void Cb_OptimizeHero_SelectedIndexChanged(object sender, EventArgs e)
@@ -1647,7 +1648,7 @@ namespace E7_Gear_Optimizer
         //Calculate all possible gear combinations and check whether they satisfy the given filters
         private static List<(Item[], SStats)> calculate(Item weapon, Item helmet,
                                                         Item armor, List<Item> necklaces,
-                                                        List<Item> rings, List<Item> boots, Hero hero, 
+                                                        List<Item> rings, List<Item> boots, Hero hero,
                                                         SStats sStats,
                                                         Dictionary<Stats, (float, float)> filter, List<Set> setFocus,
                                                         IProgress<int> progress, SStats sItemStats,
@@ -1751,7 +1752,7 @@ namespace E7_Gear_Optimizer
             if (filteredCombinations.Count > 0 && e.RowIndex >= filteredCombinations.Count - ((optimizePage - 1) * 100)) return;
 
             int iCombination = filteredCombinations.Count > 0 ? filteredCombinations[e.RowIndex + 100 * (optimizePage - 1)] : (e.RowIndex + 100 * (optimizePage - 1));
-            List <Set> activeSets;
+            List<Set> activeSets;
             switch (e.ColumnIndex)
             {
                 case 0:
@@ -2025,7 +2026,7 @@ namespace E7_Gear_Optimizer
                     if (optimizePage > 1)
                     {
                         items = combinations[e.RowIndex + ((optimizePage - 1) * 100)].Item1.ToList();
-                    } 
+                    }
                     else
                     {
                         items = combinations[e.RowIndex].Item1.ToList();
@@ -2094,7 +2095,7 @@ namespace E7_Gear_Optimizer
                 l_ImportResults.ForeColor = Color.Green;
             }
         }
-        
+
         //Create a backup of the current item and hero collection in the base directory of the application when the application closes
         //Also save Properties.Settings
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
@@ -2221,7 +2222,7 @@ namespace E7_Gear_Optimizer
             {
                 int cell1 = 0;
                 int cell2 = 0;
-                int.TryParse(e.CellValue1.ToString().Replace("%","").Replace("+", ""), out cell1);
+                int.TryParse(e.CellValue1.ToString().Replace("%", "").Replace("+", ""), out cell1);
                 int.TryParse(e.CellValue2.ToString().Replace("%", "").Replace("+", ""), out cell2);
                 e.SortResult = cell1.CompareTo(cell2);
                 e.Handled = true;
@@ -2454,10 +2455,10 @@ namespace E7_Gear_Optimizer
             dgv_OptimizeResults.Refresh();
             dgv_OptimizeResults.AutoResizeColumns();
             l_Pages.Text = "1 / " + ((combinations.Count + 99) / 100);*/
-            
+
         }
 
-        private static bool checkFilter (SStats stats, Dictionary<Stats, (float, float)> filterStats)
+        private static bool checkFilter(SStats stats, Dictionary<Stats, (float, float)> filterStats)
         {
             bool valid = true;
             foreach (KeyValuePair<Stats, (float, float)> stat in filterStats)
@@ -2685,7 +2686,7 @@ namespace E7_Gear_Optimizer
         {
             Properties.Settings.Default.LimitResultsNum = limitResultsNum = (int)nud_LimitResults.Value;
         }
-        
+
         private void b_RightSideFocus_Click(TextBox tb, string[] stats)
         {
             MultiSelectForm multiSelect = new MultiSelectForm(stats);
@@ -2714,7 +2715,7 @@ namespace E7_Gear_Optimizer
 
         private void B_BootsFocus_Click(object sender, EventArgs e)
         {
-            b_RightSideFocus_Click(tb_BootsFocus, new string[] { "ATK%", "ATK", "SPD", "HP%", "HP", "DEF%", "DEF"});
+            b_RightSideFocus_Click(tb_BootsFocus, new string[] { "ATK%", "ATK", "SPD", "HP%", "HP", "DEF%", "DEF" });
         }
 
         private void Tb_NecklaceFocus_TextChanged(object sender, EventArgs e)
@@ -2764,7 +2765,7 @@ namespace E7_Gear_Optimizer
                 File.Delete(file);
             }
         }
-        
+
         private void ContextMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
             var item = (ToolStripMenuItem)e.ClickedItem;

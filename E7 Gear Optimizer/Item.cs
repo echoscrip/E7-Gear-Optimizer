@@ -18,6 +18,7 @@ namespace E7_Gear_Optimizer
         private Stat[] subStats;
         public SStats AllStats { get; set; } = new SStats();
         private float wss;
+        private float flatWss;
         public bool Locked { get; set; }
         public Hero Equipped { get; set; }
 
@@ -88,12 +89,23 @@ namespace E7_Gear_Optimizer
         }
 
         public float WSS { get => wss; }
+        public float FlatWSS { get => flatWss; }
 
         private const float wssMultiplier = 2f / 3f;
+
+        // average HP of all soul weavers, knights, warriors at 6* awakened
+        // hardcoded for personal use
+        private const float flatAverageHP = 5742.22f;
+        private const float flatAverageDef = 637.83f;
+
+        // average ATK of all thiefs, rangers, mages, warriors at 6* awakened
+        // hardcoded for personal use
+        private const float flatAverageAtk = 1088.45f;
 
         public void calcWSS()
         {
             wss = 0;
+            flatWss = 0;
             foreach (Stat s in subStats)
             {
                 switch (s.Name)
@@ -117,6 +129,24 @@ namespace E7_Gear_Optimizer
                     default:
                         break;
                 }
+
+                float flatPercentage = 0.0f;
+                switch (s.Name)
+                {
+                    case Stats.ATK:
+                        flatPercentage = s.Value / flatAverageAtk;
+                        break;
+                    case Stats.DEF:
+                        flatPercentage = s.Value / flatAverageDef;
+                        break;
+                    case Stats.HP:
+                        flatPercentage = s.Value / flatAverageHP;
+                        break;
+                    default:
+                        break;
+                }
+                flatWss += 100 * flatPercentage / 48;
+                wss += flatWss;
             }
             wss *= wssMultiplier;
         }
