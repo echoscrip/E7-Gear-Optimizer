@@ -160,7 +160,7 @@ namespace E7_Gear_Optimizer
             {
                 return null;
             }
-            JToken statsJson = JObject.Parse(json)["results"][0]["stats"];
+            JToken statsJson = JObject.Parse(json)["results"][0]["calculatedStatus"];
             statsJson = lvl == 50 ? statsJson["lv50FiveStarNoAwaken"] : statsJson["lv60SixStarNoAwaken"];
             Dictionary<Stats, float> baseStats = new Dictionary<Stats, float>();
             var stats = statsJson.Children().GetEnumerator();
