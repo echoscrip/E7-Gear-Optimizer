@@ -2135,6 +2135,7 @@ namespace E7_Gear_Optimizer
                 }
             }
             Properties.Settings.Default.Save();
+            
         }
 
         private JObject createJson()
@@ -2410,6 +2411,7 @@ namespace E7_Gear_Optimizer
                 config.AppSettings.Settings.Remove("Version");
                 config.AppSettings.Settings.Add("Version", Application.ProductVersion);
                 config.Save(ConfigurationSaveMode.Full);
+                B_ClearCache(null, null); //Clear Cache after update to avoid compatibility issues
             }
         }
 
