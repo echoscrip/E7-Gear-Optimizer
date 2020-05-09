@@ -2761,7 +2761,6 @@
             this.is_Ring.Name = "is_Ring";
             this.is_Ring.Size = new System.Drawing.Size(181, 210);
             this.is_Ring.TabIndex = 114;
-            this.is_Ring.Load += new System.EventHandler(this.is_Ring_Load);
             // 
             // is_Boots
             // 
