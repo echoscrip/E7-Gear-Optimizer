@@ -570,6 +570,16 @@ namespace E7_Gear_Optimizer
                 values[18] = (int)stats[Stats.EHPpS];
                 values[19] = (int)stats[Stats.DMG];
                 values[20] = (int)stats[Stats.DMGpS];
+
+                // Calculate CP for the first time
+                if (values[21] == null)
+                {
+                    values[21] = (int)SStats.GetCP(stats[Stats.ATK], stats[Stats.Crit], stats[Stats.CritDmg], stats[Stats.SPD], stats[Stats.HP], stats[Stats.DEF], stats[Stats.RES], stats[Stats.EFF]);
+                }
+                else
+                {
+                    values[21] = (int)stats[Stats.CP];
+                }
                 dgv_Heroes.Rows.Add(values);
             }
 
@@ -1823,6 +1833,9 @@ namespace E7_Gear_Optimizer
                 case 14:
                     e.Value = (int)combinations[iCombination].Item2.DMGpS;
                     break;
+                case 15:
+                    e.Value = (int)combinations[iCombination].Item2.CP;
+                    break;
                 default://Skill damage
                     // TODO refactor
                     var hero = data.Heroes.Find(x => x.ID == cb_OptimizeHero.Text.Split().Last());
@@ -1935,6 +1948,9 @@ namespace E7_Gear_Optimizer
                     break;
                 case 14:
                     func = x => x.Item2.DMGpS;
+                    break;
+                case 15:
+                    func = x => x.Item2.CP;
                     break;
                 default://Skill damage
                     // TODO refactor

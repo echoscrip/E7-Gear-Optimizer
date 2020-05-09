@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace E7_Gear_Optimizer
 {
@@ -31,7 +32,7 @@ namespace E7_Gear_Optimizer
         {
             JToken jSkill = jObject["results"][0]["skills"][index];
             pow = (float)jSkill["pow"];
-            atk = (float) jSkill["att_rate"];
+            atk = (float)jSkill["att_rate"];
             jEnhancement = jSkill["enhancements"].ToArray();
             Enhance = enhanceLevel;
             HasSoulburn = jSkill["soul_requirement"]?.ToObject<int>() > 0;
@@ -109,7 +110,7 @@ namespace E7_Gear_Optimizer
         /// <param name="soulburn">Is soulburn used?</param>
         /// <param name="enemyDef">Enemy target's defence.</param>
         /// <returns></returns>
-        public float CalcDamage(SStats stats, bool crit = false, bool soulburn = false, int enemyDef = 0)
+        public float CalcDamage(SStats stats, bool crit = false, bool soulburn = false, int enemyDef = 0, bool daydream = false)
         {
             float dmg;
             if (HasSoulburn && soulburn)
@@ -129,6 +130,17 @@ namespace E7_Gear_Optimizer
                 }
             }
             dmg *= POW_CONST * damageIncrease;
+
+            // TODO: Change as HP property in optimizer
+            if (daydream)
+            {
+                float daydreamDmg = 233578 * 0.03f;
+                if (crit)
+                {
+                    daydreamDmg *= critDmg * stats.CritDmg;
+                }
+                dmg += daydreamDmg;
+            }
             return dmg / (enemyDef / 300f + 1);
         }
 

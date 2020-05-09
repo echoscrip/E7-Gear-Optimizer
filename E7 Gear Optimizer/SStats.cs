@@ -73,6 +73,25 @@ namespace E7_Gear_Optimizer
         public float EHPpS { get => EHP * SPD / 100; }
         public float DMG { get => (ATK * (1 - CritCapped)) + (ATK * CritCapped * CritDmg); }
         public float DMGpS { get => DMG * SPD / 100; }
+        public float CP { get => GetCP(ATK, CritCapped, CritDmg, SPD, HP, DEF, RES, EFF); }
+
+        /// <summary>
+        /// Returns the CP based on parameters
+        /// </summary>
+        /// <param name="ATK"></param>
+        /// <param name="CritCapped"></param>
+        /// <param name="CritDmg"></param>
+        /// <param name="SPD"></param>
+        /// <param name="HP"></param>
+        /// <param name="DEF"></param>
+        /// <param name="RES"></param>
+        /// <param name="EFF"></param>
+        /// <returns></returns>
+        public static float GetCP(float ATK, float CritCapped, float CritDmg, float SPD, float HP, float DEF, float RES, float EFF)
+        {
+            CritCapped = CritCapped < 1 ? CritCapped : 1;
+            return ((ATK * 1.6f + ATK * 1.6f * CritCapped * CritDmg) * (1 + (SPD - 45) * 0.02f) + HP + DEF * 9.3f) * (1 + (RES + EFF) / 4);
+        }
 
         /// <summary>
         /// Adds values of <paramref name="sStats"/> properties to corresponding values of the <see cref="SStats"/>

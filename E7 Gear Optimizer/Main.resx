@@ -274,7 +274,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADu
-        FAAAAk1TRnQBSQFMAgEBBgEAAUABBAFAAQQBGQEAARkBAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFk
+        FAAAAk1TRnQBSQFMAgEBBgEAAWgBBAFoAQQBGQEAARkBAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFk
         AwABMgMAAQEBAAEYBQABmAE6JwAD8APlA9gD0APMA8oDywPQA9oD8yEAA+kD2APSCc8D2gPlA+ID1gPQ
         A9UD1wPdA+ID5wP1AwAD7gPkA+yoAAPtA9sDuAOEA1EDLAMZAxEDGQMtA1QDiQO7A90D7hIAA+EDxQOT
         A18DQwY4AzoDbQOwA5UDWQM/A0wDXwNzA4MDmwPIA88DrgOQA68D3aIAA+gDtwNoAyQDBQkAAwEJAAMF
@@ -435,6 +435,9 @@
   <metadata name="c_DMGpS.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="c_CP.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="c_HeroID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -503,6 +506,9 @@
   <metadata name="c_DMGpS_Results.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="c_CP_Results.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>696, 17</value>
   </metadata>
@@ -549,6 +555,9 @@
     <value>True</value>
   </metadata>
   <metadata name="c_DMGpS_Current.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="c_CP_Current.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="ofd_import.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

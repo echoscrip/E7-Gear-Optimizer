@@ -36,9 +36,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tb_Inventory = new System.Windows.Forms.TabPage();
             this.l_ItemCount = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -205,28 +205,6 @@
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.Elements = new System.Windows.Forms.ImageList(this.components);
             this.dgv_Heroes = new System.Windows.Forms.DataGridView();
-            this.c_Portrait = new System.Windows.Forms.DataGridViewImageColumn();
-            this.c_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_Element = new System.Windows.Forms.DataGridViewImageColumn();
-            this.c_Class = new System.Windows.Forms.DataGridViewImageColumn();
-            this.c_Lvl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_Awakening = new System.Windows.Forms.DataGridViewImageColumn();
-            this.c_Sets = new System.Windows.Forms.DataGridViewImageColumn();
-            this.c_ATKHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_SPDHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_CritHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_CritDmgHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_HPHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_HPpSHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DEFHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_EFFHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_RESHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DACHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_EHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_EHPpSHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DMG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DMGpS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_HeroID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.b_EditBoots = new System.Windows.Forms.Button();
             this.b_EditRing = new System.Windows.Forms.Button();
             this.b_EditNecklace = new System.Windows.Forms.Button();
@@ -330,21 +308,6 @@
             this.chb_Equipped = new System.Windows.Forms.CheckBox();
             this.chb_Locked = new System.Windows.Forms.CheckBox();
             this.dgv_OptimizeResults = new System.Windows.Forms.DataGridView();
-            this.c_ATK_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_SPD_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_Crit_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_CritDmg_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_HP_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_HPpS_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DEF_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_EFF_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_RES_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DAC_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_Sets_Results = new System.Windows.Forms.DataGridViewImageColumn();
-            this.c_EHP_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_EHPpS_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DMG_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DMGpS_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmi_ATK = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_SPD = new System.Windows.Forms.ToolStripMenuItem();
@@ -368,21 +331,6 @@
             this.tsmi_SB = new System.Windows.Forms.ToolStripMenuItem();
             this.label37 = new System.Windows.Forms.Label();
             this.dgv_CurrentGear = new System.Windows.Forms.DataGridView();
-            this.c_ATK_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_SPD_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_Crit_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_CritDmg_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_HP_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_HPpS_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DEF_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_EFF_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_RES_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DAC_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_Sets_Current = new System.Windows.Forms.DataGridViewImageColumn();
-            this.c_EHP_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_EHPpS_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DMG_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_DMGpS_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label36 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -501,6 +449,61 @@
             this.sfd_export = new System.Windows.Forms.SaveFileDialog();
             this.tt_Skills = new System.Windows.Forms.ToolTip(this.components);
             this.tt_EquipUnlock = new System.Windows.Forms.ToolTip(this.components);
+            this.c_Portrait = new System.Windows.Forms.DataGridViewImageColumn();
+            this.c_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_Element = new System.Windows.Forms.DataGridViewImageColumn();
+            this.c_Class = new System.Windows.Forms.DataGridViewImageColumn();
+            this.c_Lvl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_Awakening = new System.Windows.Forms.DataGridViewImageColumn();
+            this.c_Sets = new System.Windows.Forms.DataGridViewImageColumn();
+            this.c_ATKHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_SPDHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_CritHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_CritDmgHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_HPHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_HPpSHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DEFHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_EFFHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_RESHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DACHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_EHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_EHPpSHero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DMG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DMGpS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_CP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_HeroID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_ATK_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_SPD_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_Crit_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_CritDmg_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_HP_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_HPpS_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DEF_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_EFF_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_RES_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DAC_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_Sets_Results = new System.Windows.Forms.DataGridViewImageColumn();
+            this.c_EHP_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_EHPpS_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DMG_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DMGpS_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_CP_Results = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_ATK_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_SPD_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_Crit_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_CritDmg_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_HP_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_HPpS_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DEF_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_EFF_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_RES_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DAC_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_Sets_Current = new System.Windows.Forms.DataGridViewImageColumn();
+            this.c_EHP_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_EHPpS_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DMG_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_DMGpS_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_CP_Current = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tb_Inventory.SuspendLayout();
             this.tc_InventorySets.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_ItemLocked)).BeginInit();
@@ -2581,6 +2584,7 @@
             this.c_EHPpSHero,
             this.c_DMG,
             this.c_DMGpS,
+            this.c_CP,
             this.c_HeroID});
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
@@ -2596,194 +2600,9 @@
             this.dgv_Heroes.ReadOnly = true;
             this.dgv_Heroes.RowHeadersWidth = 62;
             this.dgv_Heroes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Heroes.Size = new System.Drawing.Size(1319, 328);
+            this.dgv_Heroes.Size = new System.Drawing.Size(1333, 328);
             this.dgv_Heroes.TabIndex = 0;
             this.dgv_Heroes.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Heroes_RowEnter);
-            // 
-            // c_Portrait
-            // 
-            this.c_Portrait.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.c_Portrait.HeaderText = "Portrait";
-            this.c_Portrait.MinimumWidth = 8;
-            this.c_Portrait.Name = "c_Portrait";
-            this.c_Portrait.ReadOnly = true;
-            this.c_Portrait.Width = 46;
-            // 
-            // c_Name
-            // 
-            this.c_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.c_Name.HeaderText = "Name";
-            this.c_Name.MinimumWidth = 8;
-            this.c_Name.Name = "c_Name";
-            this.c_Name.ReadOnly = true;
-            this.c_Name.Width = 60;
-            // 
-            // c_Element
-            // 
-            this.c_Element.HeaderText = "Element";
-            this.c_Element.MinimumWidth = 8;
-            this.c_Element.Name = "c_Element";
-            this.c_Element.ReadOnly = true;
-            this.c_Element.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.c_Element.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.c_Element.Width = 70;
-            // 
-            // c_Class
-            // 
-            this.c_Class.HeaderText = "Class";
-            this.c_Class.MinimumWidth = 8;
-            this.c_Class.Name = "c_Class";
-            this.c_Class.ReadOnly = true;
-            this.c_Class.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.c_Class.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.c_Class.Width = 57;
-            // 
-            // c_Lvl
-            // 
-            this.c_Lvl.HeaderText = "Lvl";
-            this.c_Lvl.MinimumWidth = 8;
-            this.c_Lvl.Name = "c_Lvl";
-            this.c_Lvl.ReadOnly = true;
-            this.c_Lvl.Width = 46;
-            // 
-            // c_Awakening
-            // 
-            this.c_Awakening.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.c_Awakening.HeaderText = "Awakening";
-            this.c_Awakening.MinimumWidth = 8;
-            this.c_Awakening.Name = "c_Awakening";
-            this.c_Awakening.ReadOnly = true;
-            this.c_Awakening.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.c_Awakening.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.c_Awakening.Width = 85;
-            // 
-            // c_Sets
-            // 
-            this.c_Sets.HeaderText = "Sets";
-            this.c_Sets.MinimumWidth = 8;
-            this.c_Sets.Name = "c_Sets";
-            this.c_Sets.ReadOnly = true;
-            this.c_Sets.Width = 34;
-            // 
-            // c_ATKHero
-            // 
-            this.c_ATKHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_ATKHero.HeaderText = "ATK";
-            this.c_ATKHero.MinimumWidth = 8;
-            this.c_ATKHero.Name = "c_ATKHero";
-            this.c_ATKHero.ReadOnly = true;
-            // 
-            // c_SPDHero
-            // 
-            this.c_SPDHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_SPDHero.HeaderText = "SPD";
-            this.c_SPDHero.MinimumWidth = 8;
-            this.c_SPDHero.Name = "c_SPDHero";
-            this.c_SPDHero.ReadOnly = true;
-            // 
-            // c_CritHero
-            // 
-            this.c_CritHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_CritHero.HeaderText = "Crit";
-            this.c_CritHero.MinimumWidth = 8;
-            this.c_CritHero.Name = "c_CritHero";
-            this.c_CritHero.ReadOnly = true;
-            // 
-            // c_CritDmgHero
-            // 
-            this.c_CritDmgHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_CritDmgHero.HeaderText = "CritDmg";
-            this.c_CritDmgHero.MinimumWidth = 8;
-            this.c_CritDmgHero.Name = "c_CritDmgHero";
-            this.c_CritDmgHero.ReadOnly = true;
-            // 
-            // c_HPHero
-            // 
-            this.c_HPHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_HPHero.HeaderText = "HP";
-            this.c_HPHero.MinimumWidth = 8;
-            this.c_HPHero.Name = "c_HPHero";
-            this.c_HPHero.ReadOnly = true;
-            // 
-            // c_HPpSHero
-            // 
-            this.c_HPpSHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_HPpSHero.HeaderText = "HP/SPD";
-            this.c_HPpSHero.MinimumWidth = 8;
-            this.c_HPpSHero.Name = "c_HPpSHero";
-            this.c_HPpSHero.ReadOnly = true;
-            // 
-            // c_DEFHero
-            // 
-            this.c_DEFHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_DEFHero.HeaderText = "DEF";
-            this.c_DEFHero.MinimumWidth = 8;
-            this.c_DEFHero.Name = "c_DEFHero";
-            this.c_DEFHero.ReadOnly = true;
-            // 
-            // c_EFFHero
-            // 
-            this.c_EFFHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_EFFHero.HeaderText = "EFF";
-            this.c_EFFHero.MinimumWidth = 8;
-            this.c_EFFHero.Name = "c_EFFHero";
-            this.c_EFFHero.ReadOnly = true;
-            // 
-            // c_RESHero
-            // 
-            this.c_RESHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_RESHero.HeaderText = "RES";
-            this.c_RESHero.MinimumWidth = 8;
-            this.c_RESHero.Name = "c_RESHero";
-            this.c_RESHero.ReadOnly = true;
-            // 
-            // c_DACHero
-            // 
-            this.c_DACHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_DACHero.HeaderText = "DAC";
-            this.c_DACHero.MinimumWidth = 8;
-            this.c_DACHero.Name = "c_DACHero";
-            this.c_DACHero.ReadOnly = true;
-            // 
-            // c_EHP
-            // 
-            this.c_EHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_EHP.HeaderText = "EHP";
-            this.c_EHP.MinimumWidth = 8;
-            this.c_EHP.Name = "c_EHP";
-            this.c_EHP.ReadOnly = true;
-            // 
-            // c_EHPpSHero
-            // 
-            this.c_EHPpSHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_EHPpSHero.HeaderText = "EHP/SPD";
-            this.c_EHPpSHero.MinimumWidth = 8;
-            this.c_EHPpSHero.Name = "c_EHPpSHero";
-            this.c_EHPpSHero.ReadOnly = true;
-            // 
-            // c_DMG
-            // 
-            this.c_DMG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_DMG.HeaderText = "DMG";
-            this.c_DMG.MinimumWidth = 8;
-            this.c_DMG.Name = "c_DMG";
-            this.c_DMG.ReadOnly = true;
-            // 
-            // c_DMGpS
-            // 
-            this.c_DMGpS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_DMGpS.HeaderText = "DMG/SPD";
-            this.c_DMGpS.MinimumWidth = 8;
-            this.c_DMGpS.Name = "c_DMGpS";
-            this.c_DMGpS.ReadOnly = true;
-            // 
-            // c_HeroID
-            // 
-            this.c_HeroID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c_HeroID.HeaderText = "ID";
-            this.c_HeroID.MinimumWidth = 8;
-            this.c_HeroID.Name = "c_HeroID";
-            this.c_HeroID.ReadOnly = true;
             // 
             // b_EditBoots
             // 
@@ -2864,7 +2683,7 @@
             // 
             this.b_RemoveHero.BackgroundImage = global::E7_Gear_Optimizer.Properties.Resources.remove;
             this.b_RemoveHero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.b_RemoveHero.Location = new System.Drawing.Point(1157, 375);
+            this.b_RemoveHero.Location = new System.Drawing.Point(1172, 375);
             this.b_RemoveHero.Name = "b_RemoveHero";
             this.b_RemoveHero.Size = new System.Drawing.Size(52, 39);
             this.b_RemoveHero.TabIndex = 32;
@@ -2875,7 +2694,7 @@
             // 
             this.b_EditHero.BackgroundImage = global::E7_Gear_Optimizer.Properties.Resources.Edit;
             this.b_EditHero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.b_EditHero.Location = new System.Drawing.Point(1215, 375);
+            this.b_EditHero.Location = new System.Drawing.Point(1230, 375);
             this.b_EditHero.Name = "b_EditHero";
             this.b_EditHero.Size = new System.Drawing.Size(52, 39);
             this.b_EditHero.TabIndex = 31;
@@ -2886,7 +2705,7 @@
             // 
             this.b_AddHero.BackgroundImage = global::E7_Gear_Optimizer.Properties.Resources._new;
             this.b_AddHero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.b_AddHero.Location = new System.Drawing.Point(1273, 375);
+            this.b_AddHero.Location = new System.Drawing.Point(1288, 375);
             this.b_AddHero.Name = "b_AddHero";
             this.b_AddHero.Size = new System.Drawing.Size(52, 39);
             this.b_AddHero.TabIndex = 30;
@@ -2942,6 +2761,7 @@
             this.is_Ring.Name = "is_Ring";
             this.is_Ring.Size = new System.Drawing.Size(181, 210);
             this.is_Ring.TabIndex = 114;
+            this.is_Ring.Load += new System.EventHandler(this.is_Ring_Load);
             // 
             // is_Boots
             // 
@@ -3990,7 +3810,8 @@
             this.c_EHP_Results,
             this.c_EHPpS_Results,
             this.c_DMG_Results,
-            this.c_DMGpS_Results});
+            this.c_DMGpS_Results,
+            this.c_CP_Results});
             this.dgv_OptimizeResults.ContextMenuStrip = this.contextMenuStrip1;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
@@ -4014,115 +3835,6 @@
             this.dgv_OptimizeResults.CellValueNeeded += new System.Windows.Forms.DataGridViewCellValueEventHandler(this.Dgv_OptimizeResults_CellValueNeeded);
             this.dgv_OptimizeResults.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Dgv_OptimizeResults_ColumnHeaderMouseClick);
             this.dgv_OptimizeResults.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_OptimizeResults_RowEnter);
-            // 
-            // c_ATK_Results
-            // 
-            this.c_ATK_Results.HeaderText = "ATK";
-            this.c_ATK_Results.MinimumWidth = 8;
-            this.c_ATK_Results.Name = "c_ATK_Results";
-            this.c_ATK_Results.ReadOnly = true;
-            // 
-            // c_SPD_Results
-            // 
-            this.c_SPD_Results.HeaderText = "SPD";
-            this.c_SPD_Results.MinimumWidth = 8;
-            this.c_SPD_Results.Name = "c_SPD_Results";
-            this.c_SPD_Results.ReadOnly = true;
-            // 
-            // c_Crit_Results
-            // 
-            this.c_Crit_Results.HeaderText = "Crit";
-            this.c_Crit_Results.MinimumWidth = 8;
-            this.c_Crit_Results.Name = "c_Crit_Results";
-            this.c_Crit_Results.ReadOnly = true;
-            // 
-            // c_CritDmg_Results
-            // 
-            this.c_CritDmg_Results.HeaderText = "CritDmg";
-            this.c_CritDmg_Results.MinimumWidth = 8;
-            this.c_CritDmg_Results.Name = "c_CritDmg_Results";
-            this.c_CritDmg_Results.ReadOnly = true;
-            // 
-            // c_HP_Results
-            // 
-            this.c_HP_Results.HeaderText = "HP";
-            this.c_HP_Results.MinimumWidth = 8;
-            this.c_HP_Results.Name = "c_HP_Results";
-            this.c_HP_Results.ReadOnly = true;
-            // 
-            // c_HPpS_Results
-            // 
-            this.c_HPpS_Results.HeaderText = "HP/SPD";
-            this.c_HPpS_Results.MinimumWidth = 8;
-            this.c_HPpS_Results.Name = "c_HPpS_Results";
-            this.c_HPpS_Results.ReadOnly = true;
-            // 
-            // c_DEF_Results
-            // 
-            this.c_DEF_Results.HeaderText = "DEF";
-            this.c_DEF_Results.MinimumWidth = 8;
-            this.c_DEF_Results.Name = "c_DEF_Results";
-            this.c_DEF_Results.ReadOnly = true;
-            // 
-            // c_EFF_Results
-            // 
-            this.c_EFF_Results.HeaderText = "EFF";
-            this.c_EFF_Results.MinimumWidth = 8;
-            this.c_EFF_Results.Name = "c_EFF_Results";
-            this.c_EFF_Results.ReadOnly = true;
-            // 
-            // c_RES_Results
-            // 
-            this.c_RES_Results.HeaderText = "RES";
-            this.c_RES_Results.MinimumWidth = 8;
-            this.c_RES_Results.Name = "c_RES_Results";
-            this.c_RES_Results.ReadOnly = true;
-            // 
-            // c_DAC_Results
-            // 
-            this.c_DAC_Results.HeaderText = "DAC";
-            this.c_DAC_Results.MinimumWidth = 8;
-            this.c_DAC_Results.Name = "c_DAC_Results";
-            this.c_DAC_Results.ReadOnly = true;
-            // 
-            // c_Sets_Results
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle6.NullValue")));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.c_Sets_Results.DefaultCellStyle = dataGridViewCellStyle6;
-            this.c_Sets_Results.HeaderText = "Sets";
-            this.c_Sets_Results.MinimumWidth = 8;
-            this.c_Sets_Results.Name = "c_Sets_Results";
-            this.c_Sets_Results.ReadOnly = true;
-            // 
-            // c_EHP_Results
-            // 
-            this.c_EHP_Results.HeaderText = "EHP";
-            this.c_EHP_Results.MinimumWidth = 8;
-            this.c_EHP_Results.Name = "c_EHP_Results";
-            this.c_EHP_Results.ReadOnly = true;
-            // 
-            // c_EHPpS_Results
-            // 
-            this.c_EHPpS_Results.HeaderText = "EHP/SPD";
-            this.c_EHPpS_Results.MinimumWidth = 8;
-            this.c_EHPpS_Results.Name = "c_EHPpS_Results";
-            this.c_EHPpS_Results.ReadOnly = true;
-            // 
-            // c_DMG_Results
-            // 
-            this.c_DMG_Results.HeaderText = "DMG";
-            this.c_DMG_Results.MinimumWidth = 8;
-            this.c_DMG_Results.Name = "c_DMG_Results";
-            this.c_DMG_Results.ReadOnly = true;
-            // 
-            // c_DMGpS_Results
-            // 
-            this.c_DMGpS_Results.HeaderText = "DMG/SPD";
-            this.c_DMGpS_Results.MinimumWidth = 8;
-            this.c_DMGpS_Results.Name = "c_DMGpS_Results";
-            this.c_DMGpS_Results.ReadOnly = true;
             // 
             // contextMenuStrip1
             // 
@@ -4360,7 +4072,8 @@
             this.c_EHP_Current,
             this.c_EHPpS_Current,
             this.c_DMG_Current,
-            this.c_DMGpS_Current});
+            this.c_DMGpS_Current,
+            this.c_CP_Current});
             this.dgv_CurrentGear.ContextMenuStrip = this.contextMenuStrip1;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
@@ -4379,111 +4092,6 @@
             this.dgv_CurrentGear.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_CurrentGear.Size = new System.Drawing.Size(908, 58);
             this.dgv_CurrentGear.TabIndex = 100;
-            // 
-            // c_ATK_Current
-            // 
-            this.c_ATK_Current.HeaderText = "ATK";
-            this.c_ATK_Current.MinimumWidth = 8;
-            this.c_ATK_Current.Name = "c_ATK_Current";
-            this.c_ATK_Current.ReadOnly = true;
-            // 
-            // c_SPD_Current
-            // 
-            this.c_SPD_Current.HeaderText = "SPD";
-            this.c_SPD_Current.MinimumWidth = 8;
-            this.c_SPD_Current.Name = "c_SPD_Current";
-            this.c_SPD_Current.ReadOnly = true;
-            // 
-            // c_Crit_Current
-            // 
-            this.c_Crit_Current.HeaderText = "Crit";
-            this.c_Crit_Current.MinimumWidth = 8;
-            this.c_Crit_Current.Name = "c_Crit_Current";
-            this.c_Crit_Current.ReadOnly = true;
-            // 
-            // c_CritDmg_Current
-            // 
-            this.c_CritDmg_Current.HeaderText = "CritDmg";
-            this.c_CritDmg_Current.MinimumWidth = 8;
-            this.c_CritDmg_Current.Name = "c_CritDmg_Current";
-            this.c_CritDmg_Current.ReadOnly = true;
-            // 
-            // c_HP_Current
-            // 
-            this.c_HP_Current.HeaderText = "HP";
-            this.c_HP_Current.MinimumWidth = 8;
-            this.c_HP_Current.Name = "c_HP_Current";
-            this.c_HP_Current.ReadOnly = true;
-            // 
-            // c_HPpS_Current
-            // 
-            this.c_HPpS_Current.HeaderText = "HP/SPD";
-            this.c_HPpS_Current.MinimumWidth = 8;
-            this.c_HPpS_Current.Name = "c_HPpS_Current";
-            this.c_HPpS_Current.ReadOnly = true;
-            // 
-            // c_DEF_Current
-            // 
-            this.c_DEF_Current.HeaderText = "DEF";
-            this.c_DEF_Current.MinimumWidth = 8;
-            this.c_DEF_Current.Name = "c_DEF_Current";
-            this.c_DEF_Current.ReadOnly = true;
-            // 
-            // c_EFF_Current
-            // 
-            this.c_EFF_Current.HeaderText = "EFF";
-            this.c_EFF_Current.MinimumWidth = 8;
-            this.c_EFF_Current.Name = "c_EFF_Current";
-            this.c_EFF_Current.ReadOnly = true;
-            // 
-            // c_RES_Current
-            // 
-            this.c_RES_Current.HeaderText = "RES";
-            this.c_RES_Current.MinimumWidth = 8;
-            this.c_RES_Current.Name = "c_RES_Current";
-            this.c_RES_Current.ReadOnly = true;
-            // 
-            // c_DAC_Current
-            // 
-            this.c_DAC_Current.HeaderText = "DAC";
-            this.c_DAC_Current.MinimumWidth = 8;
-            this.c_DAC_Current.Name = "c_DAC_Current";
-            this.c_DAC_Current.ReadOnly = true;
-            // 
-            // c_Sets_Current
-            // 
-            this.c_Sets_Current.HeaderText = "Sets";
-            this.c_Sets_Current.MinimumWidth = 8;
-            this.c_Sets_Current.Name = "c_Sets_Current";
-            this.c_Sets_Current.ReadOnly = true;
-            // 
-            // c_EHP_Current
-            // 
-            this.c_EHP_Current.HeaderText = "EHP";
-            this.c_EHP_Current.MinimumWidth = 8;
-            this.c_EHP_Current.Name = "c_EHP_Current";
-            this.c_EHP_Current.ReadOnly = true;
-            // 
-            // c_EHPpS_Current
-            // 
-            this.c_EHPpS_Current.HeaderText = "EHP/SPD";
-            this.c_EHPpS_Current.MinimumWidth = 8;
-            this.c_EHPpS_Current.Name = "c_EHPpS_Current";
-            this.c_EHPpS_Current.ReadOnly = true;
-            // 
-            // c_DMG_Current
-            // 
-            this.c_DMG_Current.HeaderText = "DMG";
-            this.c_DMG_Current.MinimumWidth = 8;
-            this.c_DMG_Current.Name = "c_DMG_Current";
-            this.c_DMG_Current.ReadOnly = true;
-            // 
-            // c_DMGpS_Current
-            // 
-            this.c_DMGpS_Current.HeaderText = "DMG/SPD";
-            this.c_DMGpS_Current.MinimumWidth = 8;
-            this.c_DMGpS_Current.Name = "c_DMGpS_Current";
-            this.c_DMGpS_Current.ReadOnly = true;
             // 
             // label36
             // 
@@ -5866,6 +5474,462 @@
             this.sfd_export.FileName = "E7 Gear Optimizer.json";
             this.sfd_export.Filter = "JSON|*.json";
             // 
+            // c_Portrait
+            // 
+            this.c_Portrait.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.c_Portrait.HeaderText = "Portrait";
+            this.c_Portrait.MinimumWidth = 8;
+            this.c_Portrait.Name = "c_Portrait";
+            this.c_Portrait.ReadOnly = true;
+            this.c_Portrait.Width = 46;
+            // 
+            // c_Name
+            // 
+            this.c_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.c_Name.HeaderText = "Name";
+            this.c_Name.MinimumWidth = 8;
+            this.c_Name.Name = "c_Name";
+            this.c_Name.ReadOnly = true;
+            this.c_Name.Width = 60;
+            // 
+            // c_Element
+            // 
+            this.c_Element.HeaderText = "Element";
+            this.c_Element.MinimumWidth = 8;
+            this.c_Element.Name = "c_Element";
+            this.c_Element.ReadOnly = true;
+            this.c_Element.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.c_Element.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.c_Element.Width = 70;
+            // 
+            // c_Class
+            // 
+            this.c_Class.HeaderText = "Class";
+            this.c_Class.MinimumWidth = 8;
+            this.c_Class.Name = "c_Class";
+            this.c_Class.ReadOnly = true;
+            this.c_Class.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.c_Class.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.c_Class.Width = 57;
+            // 
+            // c_Lvl
+            // 
+            this.c_Lvl.HeaderText = "Lvl";
+            this.c_Lvl.MinimumWidth = 8;
+            this.c_Lvl.Name = "c_Lvl";
+            this.c_Lvl.ReadOnly = true;
+            this.c_Lvl.Width = 46;
+            // 
+            // c_Awakening
+            // 
+            this.c_Awakening.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.c_Awakening.HeaderText = "Awakening";
+            this.c_Awakening.MinimumWidth = 8;
+            this.c_Awakening.Name = "c_Awakening";
+            this.c_Awakening.ReadOnly = true;
+            this.c_Awakening.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.c_Awakening.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.c_Awakening.Width = 85;
+            // 
+            // c_Sets
+            // 
+            this.c_Sets.HeaderText = "Sets";
+            this.c_Sets.MinimumWidth = 8;
+            this.c_Sets.Name = "c_Sets";
+            this.c_Sets.ReadOnly = true;
+            this.c_Sets.Width = 34;
+            // 
+            // c_ATKHero
+            // 
+            this.c_ATKHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_ATKHero.HeaderText = "ATK";
+            this.c_ATKHero.MinimumWidth = 8;
+            this.c_ATKHero.Name = "c_ATKHero";
+            this.c_ATKHero.ReadOnly = true;
+            // 
+            // c_SPDHero
+            // 
+            this.c_SPDHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_SPDHero.HeaderText = "SPD";
+            this.c_SPDHero.MinimumWidth = 8;
+            this.c_SPDHero.Name = "c_SPDHero";
+            this.c_SPDHero.ReadOnly = true;
+            // 
+            // c_CritHero
+            // 
+            this.c_CritHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_CritHero.HeaderText = "Crit";
+            this.c_CritHero.MinimumWidth = 8;
+            this.c_CritHero.Name = "c_CritHero";
+            this.c_CritHero.ReadOnly = true;
+            // 
+            // c_CritDmgHero
+            // 
+            this.c_CritDmgHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_CritDmgHero.HeaderText = "CritDmg";
+            this.c_CritDmgHero.MinimumWidth = 8;
+            this.c_CritDmgHero.Name = "c_CritDmgHero";
+            this.c_CritDmgHero.ReadOnly = true;
+            // 
+            // c_HPHero
+            // 
+            this.c_HPHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_HPHero.HeaderText = "HP";
+            this.c_HPHero.MinimumWidth = 8;
+            this.c_HPHero.Name = "c_HPHero";
+            this.c_HPHero.ReadOnly = true;
+            // 
+            // c_HPpSHero
+            // 
+            this.c_HPpSHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_HPpSHero.HeaderText = "HP/SPD";
+            this.c_HPpSHero.MinimumWidth = 8;
+            this.c_HPpSHero.Name = "c_HPpSHero";
+            this.c_HPpSHero.ReadOnly = true;
+            // 
+            // c_DEFHero
+            // 
+            this.c_DEFHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_DEFHero.HeaderText = "DEF";
+            this.c_DEFHero.MinimumWidth = 8;
+            this.c_DEFHero.Name = "c_DEFHero";
+            this.c_DEFHero.ReadOnly = true;
+            // 
+            // c_EFFHero
+            // 
+            this.c_EFFHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_EFFHero.HeaderText = "EFF";
+            this.c_EFFHero.MinimumWidth = 8;
+            this.c_EFFHero.Name = "c_EFFHero";
+            this.c_EFFHero.ReadOnly = true;
+            // 
+            // c_RESHero
+            // 
+            this.c_RESHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_RESHero.HeaderText = "RES";
+            this.c_RESHero.MinimumWidth = 8;
+            this.c_RESHero.Name = "c_RESHero";
+            this.c_RESHero.ReadOnly = true;
+            // 
+            // c_DACHero
+            // 
+            this.c_DACHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_DACHero.HeaderText = "DAC";
+            this.c_DACHero.MinimumWidth = 8;
+            this.c_DACHero.Name = "c_DACHero";
+            this.c_DACHero.ReadOnly = true;
+            // 
+            // c_EHP
+            // 
+            this.c_EHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_EHP.HeaderText = "EHP";
+            this.c_EHP.MinimumWidth = 8;
+            this.c_EHP.Name = "c_EHP";
+            this.c_EHP.ReadOnly = true;
+            // 
+            // c_EHPpSHero
+            // 
+            this.c_EHPpSHero.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_EHPpSHero.FillWeight = 110F;
+            this.c_EHPpSHero.HeaderText = "EHP/SPD";
+            this.c_EHPpSHero.MinimumWidth = 8;
+            this.c_EHPpSHero.Name = "c_EHPpSHero";
+            this.c_EHPpSHero.ReadOnly = true;
+            // 
+            // c_DMG
+            // 
+            this.c_DMG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_DMG.HeaderText = "DMG";
+            this.c_DMG.MinimumWidth = 8;
+            this.c_DMG.Name = "c_DMG";
+            this.c_DMG.ReadOnly = true;
+            // 
+            // c_DMGpS
+            // 
+            this.c_DMGpS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_DMGpS.FillWeight = 120F;
+            this.c_DMGpS.HeaderText = "DMG/SPD";
+            this.c_DMGpS.MinimumWidth = 8;
+            this.c_DMGpS.Name = "c_DMGpS";
+            this.c_DMGpS.ReadOnly = true;
+            // 
+            // c_CP
+            // 
+            this.c_CP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_CP.FillWeight = 200F;
+            this.c_CP.HeaderText = "CP";
+            this.c_CP.MinimumWidth = 8;
+            this.c_CP.Name = "c_CP";
+            this.c_CP.ReadOnly = true;
+            // 
+            // c_HeroID
+            // 
+            this.c_HeroID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.c_HeroID.FillWeight = 50F;
+            this.c_HeroID.HeaderText = "ID";
+            this.c_HeroID.MinimumWidth = 8;
+            this.c_HeroID.Name = "c_HeroID";
+            this.c_HeroID.ReadOnly = true;
+            // 
+            // c_ATK_Results
+            // 
+            this.c_ATK_Results.FillWeight = 102.335F;
+            this.c_ATK_Results.HeaderText = "ATK";
+            this.c_ATK_Results.MinimumWidth = 8;
+            this.c_ATK_Results.Name = "c_ATK_Results";
+            this.c_ATK_Results.ReadOnly = true;
+            // 
+            // c_SPD_Results
+            // 
+            this.c_SPD_Results.FillWeight = 102.335F;
+            this.c_SPD_Results.HeaderText = "SPD";
+            this.c_SPD_Results.MinimumWidth = 8;
+            this.c_SPD_Results.Name = "c_SPD_Results";
+            this.c_SPD_Results.ReadOnly = true;
+            // 
+            // c_Crit_Results
+            // 
+            this.c_Crit_Results.FillWeight = 102.335F;
+            this.c_Crit_Results.HeaderText = "Crit";
+            this.c_Crit_Results.MinimumWidth = 8;
+            this.c_Crit_Results.Name = "c_Crit_Results";
+            this.c_Crit_Results.ReadOnly = true;
+            // 
+            // c_CritDmg_Results
+            // 
+            this.c_CritDmg_Results.FillWeight = 102.335F;
+            this.c_CritDmg_Results.HeaderText = "CritDmg";
+            this.c_CritDmg_Results.MinimumWidth = 8;
+            this.c_CritDmg_Results.Name = "c_CritDmg_Results";
+            this.c_CritDmg_Results.ReadOnly = true;
+            // 
+            // c_HP_Results
+            // 
+            this.c_HP_Results.FillWeight = 102.335F;
+            this.c_HP_Results.HeaderText = "HP";
+            this.c_HP_Results.MinimumWidth = 8;
+            this.c_HP_Results.Name = "c_HP_Results";
+            this.c_HP_Results.ReadOnly = true;
+            // 
+            // c_HPpS_Results
+            // 
+            this.c_HPpS_Results.HeaderText = "HP/SPD";
+            this.c_HPpS_Results.MinimumWidth = 8;
+            this.c_HPpS_Results.Name = "c_HPpS_Results";
+            this.c_HPpS_Results.ReadOnly = true;
+            // 
+            // c_DEF_Results
+            // 
+            this.c_DEF_Results.FillWeight = 102.335F;
+            this.c_DEF_Results.HeaderText = "DEF";
+            this.c_DEF_Results.MinimumWidth = 8;
+            this.c_DEF_Results.Name = "c_DEF_Results";
+            this.c_DEF_Results.ReadOnly = true;
+            // 
+            // c_EFF_Results
+            // 
+            this.c_EFF_Results.FillWeight = 102.335F;
+            this.c_EFF_Results.HeaderText = "EFF";
+            this.c_EFF_Results.MinimumWidth = 8;
+            this.c_EFF_Results.Name = "c_EFF_Results";
+            this.c_EFF_Results.ReadOnly = true;
+            // 
+            // c_RES_Results
+            // 
+            this.c_RES_Results.FillWeight = 102.335F;
+            this.c_RES_Results.HeaderText = "RES";
+            this.c_RES_Results.MinimumWidth = 8;
+            this.c_RES_Results.Name = "c_RES_Results";
+            this.c_RES_Results.ReadOnly = true;
+            // 
+            // c_DAC_Results
+            // 
+            this.c_DAC_Results.FillWeight = 102.335F;
+            this.c_DAC_Results.HeaderText = "DAC";
+            this.c_DAC_Results.MinimumWidth = 8;
+            this.c_DAC_Results.Name = "c_DAC_Results";
+            this.c_DAC_Results.ReadOnly = true;
+            // 
+            // c_Sets_Results
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle6.NullValue")));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.c_Sets_Results.DefaultCellStyle = dataGridViewCellStyle6;
+            this.c_Sets_Results.FillWeight = 102.335F;
+            this.c_Sets_Results.HeaderText = "Sets";
+            this.c_Sets_Results.MinimumWidth = 8;
+            this.c_Sets_Results.Name = "c_Sets_Results";
+            this.c_Sets_Results.ReadOnly = true;
+            // 
+            // c_EHP_Results
+            // 
+            this.c_EHP_Results.FillWeight = 102.335F;
+            this.c_EHP_Results.HeaderText = "EHP";
+            this.c_EHP_Results.MinimumWidth = 8;
+            this.c_EHP_Results.Name = "c_EHP_Results";
+            this.c_EHP_Results.ReadOnly = true;
+            // 
+            // c_EHPpS_Results
+            // 
+            this.c_EHPpS_Results.FillWeight = 110F;
+            this.c_EHPpS_Results.HeaderText = "EHP/SPD";
+            this.c_EHPpS_Results.MinimumWidth = 8;
+            this.c_EHPpS_Results.Name = "c_EHPpS_Results";
+            this.c_EHPpS_Results.ReadOnly = true;
+            // 
+            // c_DMG_Results
+            // 
+            this.c_DMG_Results.FillWeight = 102.335F;
+            this.c_DMG_Results.HeaderText = "DMG";
+            this.c_DMG_Results.MinimumWidth = 8;
+            this.c_DMG_Results.Name = "c_DMG_Results";
+            this.c_DMG_Results.ReadOnly = true;
+            // 
+            // c_DMGpS_Results
+            // 
+            this.c_DMGpS_Results.FillWeight = 120F;
+            this.c_DMGpS_Results.HeaderText = "DMG/SPD";
+            this.c_DMGpS_Results.MinimumWidth = 8;
+            this.c_DMGpS_Results.Name = "c_DMGpS_Results";
+            this.c_DMGpS_Results.ReadOnly = true;
+            // 
+            // c_CP_Results
+            // 
+            this.c_CP_Results.FillWeight = 200F;
+            this.c_CP_Results.HeaderText = "CP";
+            this.c_CP_Results.MinimumWidth = 8;
+            this.c_CP_Results.Name = "c_CP_Results";
+            this.c_CP_Results.ReadOnly = true;
+            // 
+            // c_ATK_Current
+            // 
+            this.c_ATK_Current.FillWeight = 79.95216F;
+            this.c_ATK_Current.HeaderText = "ATK";
+            this.c_ATK_Current.MinimumWidth = 8;
+            this.c_ATK_Current.Name = "c_ATK_Current";
+            this.c_ATK_Current.ReadOnly = true;
+            // 
+            // c_SPD_Current
+            // 
+            this.c_SPD_Current.FillWeight = 79.95216F;
+            this.c_SPD_Current.HeaderText = "SPD";
+            this.c_SPD_Current.MinimumWidth = 8;
+            this.c_SPD_Current.Name = "c_SPD_Current";
+            this.c_SPD_Current.ReadOnly = true;
+            // 
+            // c_Crit_Current
+            // 
+            this.c_Crit_Current.FillWeight = 79.95216F;
+            this.c_Crit_Current.HeaderText = "Crit";
+            this.c_Crit_Current.MinimumWidth = 8;
+            this.c_Crit_Current.Name = "c_Crit_Current";
+            this.c_Crit_Current.ReadOnly = true;
+            // 
+            // c_CritDmg_Current
+            // 
+            this.c_CritDmg_Current.FillWeight = 79.95216F;
+            this.c_CritDmg_Current.HeaderText = "CritDmg";
+            this.c_CritDmg_Current.MinimumWidth = 8;
+            this.c_CritDmg_Current.Name = "c_CritDmg_Current";
+            this.c_CritDmg_Current.ReadOnly = true;
+            // 
+            // c_HP_Current
+            // 
+            this.c_HP_Current.FillWeight = 79.95216F;
+            this.c_HP_Current.HeaderText = "HP";
+            this.c_HP_Current.MinimumWidth = 8;
+            this.c_HP_Current.Name = "c_HP_Current";
+            this.c_HP_Current.ReadOnly = true;
+            // 
+            // c_HPpS_Current
+            // 
+            this.c_HPpS_Current.FillWeight = 79.95216F;
+            this.c_HPpS_Current.HeaderText = "HP/SPD";
+            this.c_HPpS_Current.MinimumWidth = 8;
+            this.c_HPpS_Current.Name = "c_HPpS_Current";
+            this.c_HPpS_Current.ReadOnly = true;
+            // 
+            // c_DEF_Current
+            // 
+            this.c_DEF_Current.FillWeight = 79.95216F;
+            this.c_DEF_Current.HeaderText = "DEF";
+            this.c_DEF_Current.MinimumWidth = 8;
+            this.c_DEF_Current.Name = "c_DEF_Current";
+            this.c_DEF_Current.ReadOnly = true;
+            // 
+            // c_EFF_Current
+            // 
+            this.c_EFF_Current.FillWeight = 79.95216F;
+            this.c_EFF_Current.HeaderText = "EFF";
+            this.c_EFF_Current.MinimumWidth = 8;
+            this.c_EFF_Current.Name = "c_EFF_Current";
+            this.c_EFF_Current.ReadOnly = true;
+            // 
+            // c_RES_Current
+            // 
+            this.c_RES_Current.FillWeight = 79.95216F;
+            this.c_RES_Current.HeaderText = "RES";
+            this.c_RES_Current.MinimumWidth = 8;
+            this.c_RES_Current.Name = "c_RES_Current";
+            this.c_RES_Current.ReadOnly = true;
+            // 
+            // c_DAC_Current
+            // 
+            this.c_DAC_Current.FillWeight = 79.95216F;
+            this.c_DAC_Current.HeaderText = "DAC";
+            this.c_DAC_Current.MinimumWidth = 8;
+            this.c_DAC_Current.Name = "c_DAC_Current";
+            this.c_DAC_Current.ReadOnly = true;
+            // 
+            // c_Sets_Current
+            // 
+            this.c_Sets_Current.FillWeight = 79.95216F;
+            this.c_Sets_Current.HeaderText = "Sets";
+            this.c_Sets_Current.MinimumWidth = 8;
+            this.c_Sets_Current.Name = "c_Sets_Current";
+            this.c_Sets_Current.ReadOnly = true;
+            // 
+            // c_EHP_Current
+            // 
+            this.c_EHP_Current.FillWeight = 79.95216F;
+            this.c_EHP_Current.HeaderText = "EHP";
+            this.c_EHP_Current.MinimumWidth = 8;
+            this.c_EHP_Current.Name = "c_EHP_Current";
+            this.c_EHP_Current.ReadOnly = true;
+            // 
+            // c_EHPpS_Current
+            // 
+            this.c_EHPpS_Current.FillWeight = 110F;
+            this.c_EHPpS_Current.HeaderText = "EHP/SPD";
+            this.c_EHPpS_Current.MinimumWidth = 8;
+            this.c_EHPpS_Current.Name = "c_EHPpS_Current";
+            this.c_EHPpS_Current.ReadOnly = true;
+            // 
+            // c_DMG_Current
+            // 
+            this.c_DMG_Current.FillWeight = 79.95216F;
+            this.c_DMG_Current.HeaderText = "DMG";
+            this.c_DMG_Current.MinimumWidth = 8;
+            this.c_DMG_Current.Name = "c_DMG_Current";
+            this.c_DMG_Current.ReadOnly = true;
+            // 
+            // c_DMGpS_Current
+            // 
+            this.c_DMGpS_Current.FillWeight = 120F;
+            this.c_DMGpS_Current.HeaderText = "DMG/SPD";
+            this.c_DMGpS_Current.MinimumWidth = 8;
+            this.c_DMGpS_Current.Name = "c_DMGpS_Current";
+            this.c_DMGpS_Current.ReadOnly = true;
+            // 
+            // c_CP_Current
+            // 
+            this.c_CP_Current.FillWeight = 200F;
+            this.c_CP_Current.HeaderText = "CP";
+            this.c_CP_Current.MinimumWidth = 8;
+            this.c_CP_Current.Name = "c_CP_Current";
+            this.c_CP_Current.ReadOnly = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5873,7 +5937,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1469, 690);
+            this.ClientSize = new System.Drawing.Size(1486, 707);
             this.Controls.Add(this.tc_Main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -6234,28 +6298,6 @@
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridViewImageColumn c_Portrait;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_Name;
-        private System.Windows.Forms.DataGridViewImageColumn c_Element;
-        private System.Windows.Forms.DataGridViewImageColumn c_Class;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_Lvl;
-        private System.Windows.Forms.DataGridViewImageColumn c_Awakening;
-        private System.Windows.Forms.DataGridViewImageColumn c_Sets;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_ATKHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_SPDHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_CritHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_CritDmgHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_HPHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_HPpSHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DEFHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_EFFHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_RESHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DACHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHPpSHero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMGpS;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_HeroID;
         private System.Windows.Forms.DataGridViewImageColumn c_set;
         private System.Windows.Forms.DataGridViewImageColumn c_Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn c_Grade;
@@ -6382,36 +6424,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmi_EHPpS;
         private System.Windows.Forms.ToolStripMenuItem tsmi_DMG;
         private System.Windows.Forms.ToolStripMenuItem tsmi_DMGpS;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_ATK_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_SPD_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_Crit_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_CritDmg_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_HP_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_HPpS_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DEF_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_EFF_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_RES_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DAC_Results;
-        private System.Windows.Forms.DataGridViewImageColumn c_Sets_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHP_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHPpS_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMG_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMGpS_Results;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_ATK_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_SPD_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_Crit_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_CritDmg_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_HP_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_HPpS_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DEF_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_EFF_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_RES_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DAC_Current;
-        private System.Windows.Forms.DataGridViewImageColumn c_Sets_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHP_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHPpS_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMG_Current;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMGpS_Current;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.NumericUpDown nud_S3;
         private System.Windows.Forms.Label label20;
@@ -6431,6 +6443,61 @@
         private System.Windows.Forms.Label l_Status;
         private System.Windows.Forms.Button b_EquipUnlockOptimize;
         private System.Windows.Forms.ToolTip tt_EquipUnlock;
+        private System.Windows.Forms.DataGridViewImageColumn c_Portrait;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_Name;
+        private System.Windows.Forms.DataGridViewImageColumn c_Element;
+        private System.Windows.Forms.DataGridViewImageColumn c_Class;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_Lvl;
+        private System.Windows.Forms.DataGridViewImageColumn c_Awakening;
+        private System.Windows.Forms.DataGridViewImageColumn c_Sets;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_ATKHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_SPDHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_CritHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_CritDmgHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_HPHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_HPpSHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DEFHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_EFFHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_RESHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DACHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHPpSHero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMGpS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_CP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_HeroID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_ATK_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_SPD_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_Crit_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_CritDmg_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_HP_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_HPpS_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DEF_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_EFF_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_RES_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DAC_Results;
+        private System.Windows.Forms.DataGridViewImageColumn c_Sets_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHP_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHPpS_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMG_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMGpS_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_CP_Results;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_ATK_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_SPD_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_Crit_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_CritDmg_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_HP_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_HPpS_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DEF_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_EFF_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_RES_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DAC_Current;
+        private System.Windows.Forms.DataGridViewImageColumn c_Sets_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHP_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_EHPpS_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMG_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_DMGpS_Current;
+        private System.Windows.Forms.DataGridViewTextBoxColumn c_CP_Current;
     }
 }
 
